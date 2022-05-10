@@ -7,22 +7,20 @@ function App() {
   return (
     <div className="App">
       <video autoPlay loop muted>
-        <source src={bgVideo} type="video/mp4"/>
+        <source src={bgVideo} type="video/mp4" />
       </video>
-      <div className="header"><IoIosFitness size={110} className="fix"/><IoIosFitness size={50} className="fix1"/>TUSSLE.FIT</div>
+      <div className="header"><IoIosFitness size={110} className="fix" /><IoIosFitness size={50} className="fix1" />TUSSLE.FIT</div>
       <div className="desc">Become your best self</div>
       <div className="box">
         <div className="login"> Log In</div>
         <div className="flexed">
-          <input list="browsers" name="browser" id="browser" value="+91" className="input1" />
-          <datalist id="browsers">
-            <option value="+99" />
-            <option value="335" />
-            <option value="213" />
-            <option value="+1" />
-            <option value="+56" />
-          </datalist>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" className="input2" placeholder="enter phone number"/>
+          <select name="plan" id="plan" className="input1">
+            <option value="+91" selected>+91</option>
+            <option value="+92" >+92 </option>
+            <option value="professional">+93</option>
+            <option value="corporate">+95</option>
+          </select>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" className="input2" placeholder="enter phone number" />
         </div>
         <div className="button">Log-in</div>
         <div className="contact">Contact support</div>
@@ -33,7 +31,7 @@ function App() {
         <div>terms of service</div>
         <div>privacy policy</div>
       </div>
-      <div className="cam"><div className="icon"><FaInstagram size={25}/></div></div>
+      <div className="cam"><div className="icon"><FaInstagram size={25} /></div></div>
     </div>
   );
 }
